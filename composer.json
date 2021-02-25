@@ -1,0 +1,17 @@
+{
+    "name": "james/tinypngbatch",
+    "description": "Small tool to batch process images through tinypng",
+    "type": "project",
+    "require": {
+        "tinify/tinify": "dev-master",
+        "vlucas/phpdotenv": "5.3.x-dev"
+    },
+    "license": "mit",
+    "authors": [
+        {
+            "name": "James Heathcote",
+            "email": "jamesheathcotebu@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

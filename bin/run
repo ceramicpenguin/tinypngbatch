@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+if [ ! -f .env ]; then
+    echo ".env not found. Try running 'cp .env.dist .env'"
+    exit 1
+fi
+
+docker-compose run -T --user "$(id -u):$(id -g)" php sh -c 'cd /var/www/html && php run.php'

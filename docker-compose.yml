@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+
+  php:
+    image: php:7.4-alpine
+    container_name: tinypngbatch-php
+    volumes:
+      - php:/var/www/html
+    env_file:
+      - .env
+
+volumes:
+  php:
+    name: "tinypngbatch-php"
+    driver_opts:
+      type: none
+      device: $PWD/.
+      o: bind
